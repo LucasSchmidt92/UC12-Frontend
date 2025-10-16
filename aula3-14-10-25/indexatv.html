@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <main>
+        <form id="formCadastro" action="./destino.html" method="post">
+
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" autofocus>
+            <br><br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <label for="time">Time do Coração: (Pergunta Eliminatória) </label>
+            <input type="text" name="time" id="time">
+            <br><br>
+
+            <label for="cor">Cor Favorita: </label>
+            <input type="color" name="cor" id="cor">
+            <br><br>
+
+            <label for="idade">Data de Nascimento: </label>
+            <input type="date" name="idade" id="idade">
+            <br><br>
+            
+            <label for="genero">Genero: </label>
+            <br><br>
+
+            <input type="radio" name="genero" id="generoF">
+            <label for="genero">Feminino </label>
+            <br><br>
+
+            <input type="radio" name="genero" id="generoM">
+            <label for="genero">Macho Alfa </label>
+            <br><br>
+
+            <input type="radio" name="genero" id="generoNI">
+            <label for="genero"> Não me venha com frescuras</label>
+            <br><br>
+
+            <label for="interesses">Marque seus tópicos de Interesse</label>
+            <br><br>
+
+            <input type="checkbox" name="interesse" id="interesse">
+            <label for="interesse">Futebol</label>
+            <br><br>
+
+            <input type="checkbox" name="interesse" id="interesse">
+            <label for="interesse">Pokemon</label>
+            <br><br>
+
+            <input type="checkbox" name="interesse" id="interesse">
+            <label for="interesse">Desenvolvimento de Sistemas</label>
+            <br><br>
+
+            <input type="checkbox" name="interesse" id="interesse">
+            <label for="interesse">Gerenciamento de Farmacia</label>
+            <br><br>
+
+            <input type="checkbox" name="interesse" id="interesse">
+            <label for="interesse">Tecnicas para fazer um bom churrasco</label>
+            <br><br>
+
+           
+
+            <label for="sobreVoce">Escreva um pouco sobre Você:</label>
+            <br>
+            <textarea name="caixaTexto" id="caixa" cols="30" rows="10"></textarea>
+            <br><br>
+
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha">
+            <br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <script>
+            const form = document.getElementById("formCadastro")
+            form.addEventListener("submit", (e)=>{
+                e.preventDefault()
+                alert("Acesso negado")
+            })
+        </script>
+    </main>
+</body>
+</html>
