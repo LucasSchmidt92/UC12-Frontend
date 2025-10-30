@@ -1,0 +1,53 @@
+body {
+    font-family: Arial;
+    text-align: center;
+  }
+  
+  /* Exercício 1 e 2 */
+  #caixa1, #caixa2, #caixa3 {
+    width: 200px;
+    height: 100px;
+    margin: 10px auto;
+    border: 2px solid black;
+    padding: 10px;
+  }
+  
+  #caixa1 { background: rgb(230, 18, 170); }
+  #caixa2 { background: rgb(211, 21, 8); box-sizing: border-box; }
+  #caixa3 { background: rgb(0, 176, 12); }
+  
+  /* Exercício 3 */
+  .linha .bloco {
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+    background: lightgray;
+    margin: 5px;
+    line-height: 60px;
+  }
+  
+  /* Exercício 4 */
+.teste {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+  }
+  
+  /* Exercício 5 */
+  .card {
+    width: 250px;
+    margin: 20px auto;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 10px
+   
+  }
+  .card img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+
+
